@@ -13,7 +13,7 @@ library.
 ## Install
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/jot-to-markdown.git
+git clone https://github.com/michaelzhenginchina-rgb/jot-to-markdown.git
 cd jot-to-markdown
 ./install.sh
 ```
