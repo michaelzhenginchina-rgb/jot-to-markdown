@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Jot",
+  "version": "1.0.0",
+  "description": "Highlight something you're reading, right-click, save it to a Markdown file on your own machine.",
+  "permissions": ["contextMenus", "scripting", "activeTab"],
+  "host_permissions": ["http://127.0.0.1/*"],
+  "background": { "service_worker": "background.js" },
+  "commands": {
+    "jot-note": {
+      "suggested_key": { "default": "Ctrl+Shift+S", "mac": "Command+Shift+S" },
+      "description": "Save highlight with a note"
+    }
+  }
+}
