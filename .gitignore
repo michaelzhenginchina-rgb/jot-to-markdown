@@ -10,3 +10,20 @@ __pycache__/
 .jot.log
 .jot-books-imported.json
 .DS_Store
+
+# Local credentials, notes, exports and logs
+.jot-token
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log
+*.sqlite*
+*.db
+highlights/
+audio/
+attachments/
+Apple Notes/
+生词本.md
+[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-*.md

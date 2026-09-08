@@ -285,7 +285,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         if self.path.startswith("/ping"):
-            self._reply(200, {"ok": True, "store": str(STORE)})
+            self._reply(200, {"ok": True})
         else:
             self._reply(404, {"ok": False, "error": "not found"})
 

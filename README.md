@@ -133,6 +133,22 @@ key with `./set-key.sh` (it reads without echoing and writes to
 `OPENAI_API_KEY` in the environment. Without a key, the lookups sit out and
 everything else works.
 
+## Privacy
+
+The repository contains source code, not your saved highlights or imported notes.
+Keep your note store outside this checkout. Local tokens, API keys, generated
+installation files, logs and common note exports are excluded by `.gitignore`;
+do not force-add them or share generated `install.html`, `bookmarklet.url.txt`
+or `extension/config.js`.
+
+Saving a highlight uses the local server. If you configure an API key and use
+the `生词` tag, vocabulary lookup sends the selected text, surrounding context
+and article title to the configured provider (Anthropic or OpenAI). Avoid that
+feature for confidential text. Apple Books imports with `--vocab-max` can also
+trigger these lookups.
+
+The public health check returns only readiness, without your local store path.
+
 ## Notes
 
 - **Token.** `<store>/.jot-token` is a shared secret generated at install and
